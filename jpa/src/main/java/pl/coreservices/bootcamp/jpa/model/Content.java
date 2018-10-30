@@ -1,12 +1,17 @@
 package pl.coreservices.bootcamp.jpa.model;
 
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+import javax.persistence.Inheritance;
 import java.time.LocalDateTime;
 
 /**
  * Created by BKuczynski on 2016-12-15.
  */
+@Entity()
+@Inheritance()
 public class Content {
-
+	@EmbeddedId
 	private Author author;
 
 	private LocalDateTime publishedAt;

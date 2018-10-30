@@ -19,7 +19,7 @@ public class Application {
 	@Bean
 	public CommandLineRunner demo() {
 		return (args)->{
-			// tu załaduj dane do bazy
+
 		};
 	}
 }
